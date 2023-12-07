@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>
+            <h3>Openingsuren</h3>
+                <p>Behandelingen kunnen vastgelegd worden tijdens volgende openingsuren:</p>
+                    <ul>
+                        <li>Maandag van 9u00 tot 18u00</li>
+                        <li>Dinsdag van 9u00 tot 20u00</li>
+                        <li>Woensdag van 9u00 tot 18u00</li>
+                        <li>Donderdag van 9u00 tot 18u00</li>
+                        <li>Vrijdag van 9u00 tot 13u00</li>
+                    </ul>
+            <h3>Betalingsmogelijkheden</h3>
+                <p>In de tandartsenpraktijk kan u betalen met bancontact (bij voorkeur) of cash. <br>
+                    Visa en overschrijvingen worden niet aanvaard.</p>
+            <h3>Tandarts van wacht</h3>
+                <p>Heeft u ernstige tandpijn in het weekend of op een wettelijke feestdag? <br>
+                    Dan kan u de tandarts van wacht consulteren. Om te weten waar u terecht kan,
+                    belt u naar 0903 399 69</p>
+        </p>
+        <p>
+            <img src="afbeeldingen/foto 1.jpg" alt="afbeelding tandarts" width="300" height="300">
+            <img src="afbeeldingen/foto 2.jpg" alt="afbeelding tandarts" width="300" height="300">
+            <img src="afbeeldingen/foto 3.jpg" alt="afbeelding tandarts" width="300" height="300"> 
+        </p>
+        <p>
+            <form id="afspraak tandarts" method="post" action="https://formspree.io/f/mwkddgew">
+                <fieldset>
+                    <legend>Persoonlijke Gegevens</legend><br>
+                            <label for="Naam & Voornaam">Naam & Voornaam:</label>
+                                <input id="naam" type="text" name="naam en voornaam"><br><br>
+                                <input type="radio" name="geslacht" value="man" checked>Man
+                                <input type="radio" name="geslacht" value="vrouw">Vrouw
+                                <input type="radio" name="geslacht" value="anders">Anders <br><br>
+                            <label for="Leeftijd">Leeftijd</label>
+                                <input type="number" name="leeftijd" min="0" max="120"> <br><br>
+                            <label for="adres">Adres:</label>
+                                <input type="text" id="adres" name="adres"><br><br>
+                            <label for="postcode">Postcode:</label>
+                                <input type="number" name="postcode" min="1000" max="9999"><br><br>
+                            <label for=" woonplaats">Woonplaats:</label>
+                                <input type="text" id="woonplaats" name="woonplaats"><br><br>
+                            <label for="telefoonnummer">Telefoonnummer:</label>
+                                <input type="tel" name="telefoonnummer"><br><br>
+                            <label for="emailadres">Emailadres:</label>
+                                <input type="email" id="emailadres" name="emailadres"><br><br> 
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Beschrijving Klachten</legend><br>
+                    <i>Selecteer wat van toepassing is</i><br>
+                           <label> <input type="checkbox" name="controleafspraak" value="controleafspraak">Controleafspraak </label> <br>
+                           <label> <input type="checkbox" name="klacht niet dringend" value="klacht niet dringend">Specifieke klacht - niet dringend </label><br>
+                           <label> <input type="checkbox" name="klacht dringend" value="klacht dringend">Specifieke klacht - dringend (U wordt zo snel mogelijk gecontacteerd) </label><br><br>
+                    <i>Indien mogelijk, stuur een foto door van het probleem</i><br>
+                    Selecteer foto: 
+                    <input type="file" id="foto" name="foto probleem">
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Toelichting Klachten</legend>
+                    <i>Beschrijf hieronder kort Uw klachten (max.1500 tekens)</i><br>
+                            <textarea name="beschrijving klachten" maxlenght="1500" placeholder="Ik heb last van"></textarea><br><br>
+                    <i> Sinds wanneer zijn de klachten aanwezig?</i><br>
+                            <input type="date" name="datum klachten" value="begindatum klachten" min="2023-01-01">
+                </fieldset>
+                <br>
+                    <button type="submit" name="Verzenden">
+                        <strong>Verzenden</strong>
+                    </button>
+            </form>
+        </p>
+        <a href="#top">Ga naar boven</a>
+    </body>
+</html>
